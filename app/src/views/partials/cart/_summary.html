@@ -19,7 +19,7 @@
       {{ ngCart.getTotalItems() }}
       <ng-pluralize count="ngCart.getTotalItems()" when="{1: 'item', 'other':'items'}"></ng-pluralize>
       <br />{{ ngCart.totalCost() | currency }}
-      <a ng-click="ngCart.empty()">empty cart</a>
+      <a ng-if="ngCart.getTotalItems() > 0" ng-click="ngCart.empty()">empty cart</a>
     </div>
   </div>
 </div>
