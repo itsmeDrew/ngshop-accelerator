@@ -1,0 +1,20 @@
+// core
+@import 'core/mixins';
+@import 'core/animations';
+
+// core overrides
+@import 'core/colors';
+@import 'core/config';
+
+// vendor
+@import './node_modules/bedrock-css/src/scss/bedrock';
+
+// base
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/forms';
+@import 'base/buttons';
+@import 'base/fonts';
+@import 'base/helpers';
+
+@import 'base/layout';

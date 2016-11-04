@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html class="no-js" ng-app="App">
+<head>
+  <!-- <base href="/"> -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ngCart Accelerator</title>
+  <link rel="stylesheet" href="assets/css/main.min.css">
+
+  <script>
+    var baseUrl = '//firebase.';
+    var baseDataURL = 'https://ngcartaccelerator.firebaseio.com/';
+
+    window.config = {
+      baseUrl: baseUrl,
+      baseDataURL: baseDataURL,
+    };
+  </script>
+</head>
+<body ng-controller="AppCtrl as app" route-classnames>
+
+  <div ui-view="header"></div>
+  <div ui-view="content"></div>
+  <div ui-view="footer"></div>
+
+  <script src="assets/js/main.min.js"></script>
+
+</body>
+</html>

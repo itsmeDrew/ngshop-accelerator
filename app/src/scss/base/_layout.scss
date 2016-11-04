@@ -1,0 +1,15 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  @include font-size($base-font__size);
+
+  line-height: $base-line-height;
+  font-family: $base-font__family--sans-serif + '-regular', arial, sans-serif;
+}
+
+hgroup {
+  margin-bottom: 2rem;
+}
