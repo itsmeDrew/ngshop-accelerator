@@ -1,11 +1,14 @@
+<br>
+<br>
+<br>
 <section class="home row">
   <div class="container--grid text-center">
-    <div class="col col--md-6 col--md-push-3">
+    <div class="col col--md-6 col--md-push-3" ng-repeat="shirt in products.categories.shirts">
       <img src="https://placehold.it/262x150" alt="image" />
-      <h4>My Item #1</h4>
-      <p>$10.99</p>
-      <ngcart-addtocart id="item1" name="My Item #1" price="10.99" quantity="1" quantity-max="5">Add to Cart</ngcart-addtocart>
+      <h4>{{shirt.name}}</h4>
+      <p>{{shirt.price}}</p>
+      <ngcart-addtocart id="{{shirt.id}}" name="{{shirt.name}}" price="{{shirt.price}}" quantity="1" quantity-max="5">Add to Cart</ngcart-addtocart>
     </div>
   </div>
 </section>
-<ngcart-summary></ngcart-summary>
+<ngCart-summary></ngCart-summary>
