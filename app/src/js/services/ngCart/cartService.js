@@ -5,8 +5,6 @@ var app = angular.module('App.Service.ngCart.Cart', []);
 app.service('ngCart', ngCart);
 
 function ngCart ($rootScope, $window, ngCartItem, store) {
-  var vm = this;
-
   this.init = function(){
       this.$cart = {
           shipping : null,

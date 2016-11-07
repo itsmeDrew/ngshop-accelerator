@@ -1,0 +1,5 @@
+<div class="minicart-icon">
+  <i class="minicart-icon__icon fa fa-shopping-cart" aria-hidden="true"></i>
+  <span class="minicart-icon__total-items" ng-if="ngCart.getTotalItems() > 0">{{ ngCart.getTotalItems() }}</span>
+</div>
+{{ ngCart.totalCost() | currency }}

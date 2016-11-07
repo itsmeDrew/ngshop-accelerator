@@ -8,6 +8,8 @@
 
 // vendor
 @import './node_modules/bedrock-css/src/scss/bedrock';
+$fa-font-path: "../fonts/font-awesome/" !default;
+@import './node_modules/font-awesome/scss/font-awesome';
 
 // base
 @import 'base/reset';
@@ -16,5 +18,10 @@
 @import 'base/buttons';
 @import 'base/fonts';
 @import 'base/helpers';
+
+// components
+@import 'components/header';
+@import 'components/cart/cart-summary';
+@import 'components/cart/minicart';
 
 @import 'base/layout';

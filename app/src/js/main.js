@@ -17,6 +17,7 @@ require('./controllers/CartCtrl');
 //DIRECTIVES
 require('./directives/ngCart/addToCart');
 require('./directives/ngCart/cart');
+require('./directives/ngCart/minicart');
 require('./directives/ngCart/checkout');
 require('./directives/ngCart/summary');
 
@@ -27,6 +28,7 @@ require('./services/ngCart/storeService');
 require('./services/ngCart/fulfilment/fulfilmentHttp');
 require('./services/ngCart/fulfilment/fulfilmentLog');
 require('./services/ngCart/fulfilment/fulfilmentProvider');
+require('./services/products/productService');
 
 var app = angular.module('App', [
   'ui.router',
@@ -39,6 +41,7 @@ var app = angular.module('App', [
   'App.Controller.CartCtrl',
   'App.Directive.ngCart.AddToCart',
   'App.Directive.ngCart.Cart',
+  'App.Directive.ngCart.Minicart',
   'App.Directive.ngCart.Checkout',
   'App.Directive.ngCart.Summary',
   'App.Service.ngCart.Cart',
@@ -47,6 +50,7 @@ var app = angular.module('App', [
   'App.Service.ngCart.Fulfilment.Http',
   'App.Service.ngCart.Fulfilment.Log',
   'App.Service.ngCart.Fulfilment.Provider',
+  'App.Service.Products.Products',
 ]);
 
 app.controller('AppCtrl', require('./controllers/AppCtrl'));
