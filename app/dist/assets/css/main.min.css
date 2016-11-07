@@ -5020,8 +5020,35 @@ button {
   padding: 1rem;
   color: #FFFFFF; }
 
+.site-header__cart {
+  text-align: right; }
+
 .ngcart-summary__icon {
   color: #FFFFFF; }
+
+.minicart-icon {
+  position: relative;
+  display: inline-block;
+  margin-right: 1rem; }
+
+.minicart-icon__icon {
+  font-size: 24px;
+  font-size: 1.5rem; }
+
+.minicart-icon__total-items {
+  border-radius: 99px;
+  -moz-border-radius: 99px;
+  -webkit-border-radius: 99px;
+  font-size: 11px;
+  font-size: 0.6875rem;
+  position: absolute;
+  top: -3px;
+  right: -8px;
+  height: 15px;
+  width: 15px;
+  background: red;
+  text-align: center;
+  line-height: 15px; }
 
 html {
   width: 100%;

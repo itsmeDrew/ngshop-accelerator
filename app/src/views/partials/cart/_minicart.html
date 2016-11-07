@@ -1,11 +1,5 @@
-<div class="row">
-  <div class="container--grid">
-    <div class="col col--md-6">
-      <span class="minicart__total-items">
-        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-        {{ ngCart.getTotalItems() }}
-      </span>
-      {{ ngCart.totalCost() | currency }}
-    </div>
-  </div>
+<div class="minicart-icon">
+  <i class="minicart-icon__icon fa fa-shopping-cart" aria-hidden="true"></i>
+  <span class="minicart-icon__total-items" ng-if="ngCart.getTotalItems() > 0">{{ ngCart.getTotalItems() }}</span>
 </div>
+{{ ngCart.totalCost() | currency }}

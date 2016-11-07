@@ -21,6 +21,7 @@ $fa-font-path: "../fonts/font-awesome/" !default;
 
 // components
 @import 'components/header';
-@import 'components/cart-summary';
+@import 'components/cart/cart-summary';
+@import 'components/cart/minicart';
 
 @import 'base/layout';
