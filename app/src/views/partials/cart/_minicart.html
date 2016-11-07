@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="container--grid">
+    <div class="col col--md-6">
+      <span class="minicart__total-items">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        {{ ngCart.getTotalItems() }}
+      </span>
+      {{ ngCart.totalCost() | currency }}
+    </div>
+  </div>
+</div>

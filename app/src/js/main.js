@@ -17,6 +17,7 @@ require('./controllers/CartCtrl');
 //DIRECTIVES
 require('./directives/ngCart/addToCart');
 require('./directives/ngCart/cart');
+require('./directives/ngCart/minicart');
 require('./directives/ngCart/checkout');
 require('./directives/ngCart/summary');
 
@@ -40,6 +41,7 @@ var app = angular.module('App', [
   'App.Controller.CartCtrl',
   'App.Directive.ngCart.AddToCart',
   'App.Directive.ngCart.Cart',
+  'App.Directive.ngCart.Minicart',
   'App.Directive.ngCart.Checkout',
   'App.Directive.ngCart.Summary',
   'App.Service.ngCart.Cart',
